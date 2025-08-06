@@ -11,12 +11,25 @@
 # 6: I want to print a clean statement that displays all of the players names and current life totals after each interaction and will prompt for more interactions 
 
 # Current attempt to create a player and the code to handle the interaction math
-def player(life_total, damage, healing):
-    life_total += healing
-    life_total -= damage
-    remaining_life = life_total
-    return remaining_life
 
-print(player(20, 0, 10))
-    
-    
+
+print("========================")
+print("Welcome to AetherPulse\nThe simple to use Magic the Gathering life tracker")
+print("========================")
+print(input("Please enter your name: "))
+print(input("Please enter your starting life total: "))
+print(f"{player_one}'s life total is {starting_life}")
+
+# def player_status:
+# I need this to accept inputs for taking damage and gaining health. 
+# I need to assign this to each player individually and allow for each player to be affected without changing the other players life totals or status changes
+
+# def player:
+# I need this to be assigned to each individual player and allow for the player's name
+# I want this to be able to assign a title to each player individually, EX: "player 1: John" and "player 2: jessica"
+
+
+
+
+
+
