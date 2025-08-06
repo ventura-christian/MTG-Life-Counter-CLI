@@ -32,4 +32,3 @@ print(f"{player_one}'s life total is {starting_life}")
 
 
 
-
