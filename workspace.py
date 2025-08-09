@@ -12,13 +12,24 @@
 
 # Current attempt to create a player and the code to handle the interaction math
 
-
 print("========================")
 print("Welcome to AetherPulse\nThe simple to use Magic the Gathering life tracker")
 print("========================")
-print(input("Please enter your name: "))
-print(input("Please enter your starting life total: "))
-print(f"{player_one}'s life total is {starting_life}")
+player_one = input("Please enter your name: ")
+player_name = player_one.capitalize()
+starting_life_total = input("Please enter your starting life total: ")
+
+
+print("========================")
+print(f"Match started\n{player_name} begins the game with {starting_life_total} life.")
+
+
+
+
+    
+    
+
+    
 
 # def player_status:
 # I need this to accept inputs for taking damage and gaining health. 
