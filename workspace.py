@@ -17,13 +17,39 @@ print("Welcome to AetherPulse\nThe simple to use Magic the Gathering life tracke
 print("========================")
 player_one = input("Please enter your name: ")
 player_name = player_one.capitalize()
-starting_life_total = input("Please enter your starting life total: ")
-
+starting_life_total = input("Please enter your current life total: ")
 
 print("========================")
 print(f"Match started\n{player_name} begins the game with {starting_life_total} life.")
 
+def player_options():
+    options = int(input("Please make a selection:\n1 Gain Life\n2 Lose Life\n3 Exit program\nSelection: "))
+    while options != 3:
+        if options == 1:
+            gained_life = int(input("How much life is gained? "))
+            current_life_total = starting_life_total + gained_life
+            return f"{player_name} now has {current_life_total} life."
+        elif options == 2:
+            life_lost = int(input("How much life is lost? "))
+            current_life_total = starting_life_total - life_lost
+            return f"{player_name} now has {current_life_total} life."
+        
+    return "Thank you for using AetherPulse!"
 
+print(player_options())
+            
+    
+    
+# print(player_options())
+        
+
+
+# I need to take the player name and current life total and interact with them using logic to add or remove health from the player
+# def life_gain():
+    
+    
+        
+    
 
 
     
