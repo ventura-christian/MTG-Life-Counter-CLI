@@ -1,5 +1,6 @@
 # !/usr/bin/env python3
 
+
 """
 AetherPulse
 Tabletop Game Life/Player Tracker
@@ -18,56 +19,67 @@ Returns:
     _type_: _description_
 """
 
-print("========================")
-print("Welcome to AetherPulse\nThe simple to use Magic the Gathering life tracker")
-print("========================")
-player_one = input("Please enter your name: ")
-player_name = player_one.capitalize()
-starting_life_total = int(input("Please enter your current life total: "))
-
-print("========================")
-print(f"Match started\n{player_name} begins the game with {starting_life_total} life.")
-
 # Variables needed
     # player name, starting life total, updated life total, 
 # Functions needed
     # options menu
     # Gain life, loose life
     # increment life totals (+1, +5, +10 and custom)
-
+VERSION = "1.0.0"
+    
+def get_user_info(prompt):
+    return input(prompt)
+    # Ask user for player name
+    
+def get_starting_life_total(prompt):
+    return input(prompt)
+    # Ask user for starting life total
 
 def player_options():
+    # This will handle the user selections for various use cases
     options = int(input("Please make a selection:\n1 Gain Life\n2 Lose Life\n3 Exit program\nSelection: "))
     
     while options != 3:
         if options == 1:
-            gain_life_options()
-            # gained_life = input("How much life is gained? ")
-            # new_life_total = starting_life_total + gained_life
-            # print(f"{player_name} now has {current_life_total} life.") 
-            # return player_options()
-        # THIS IS WHERE I LEFT OFF!!
-        # Continue figuring out how to store the new, updated life totals after each change occurs
+            print(gaining_life())
         elif options == 2:
-            lose_life_options()
-            # life_lost = input("How much life is lost? ")
-            # print(f"{player_name} now has {current_life_total} life.")
-            # return player_options()
+            print(loosing_life())
+        else: 
+            print("Thank you for using AetherPulse!") 
 
-    return "Thank you for using AetherPulse!"
-
-print(player_options())
-
-def gain_life_options():
-    gain_options = int(input("How much life is gained?\n1 Gain +1 life\n2 Gain +5 life\n3 Gain +10 life\n4 Gain custom amount of life\nSelection: "))
-    if gain_options == 1:
-        
+def gaining_life():
+    # This will handle the options for gaining life
+    life_options = int(input("Please make a selection:\n1 +1 life\n2 +5 life\n3 +10 life\nSelection: "))
+    
+    while life_options():
+        if life_options == 1:
             
+    
+def loosing_life():
+    # This iwll handle the options for loosing life
+    
+    
 
-def lose_life_options():
-    loss_options = int(input("How much life is lost?\n1 Loose +1 life\n2 Loose +5 life\n3 Loose +10 life\n4 Loose a custom amount of life\nSelection: "))
-    
-    
+active_life_total = get_starting_life_total
+
+
+def main():
+    print("========================")
+    print(f"Welcome to AetherPulse\nv{VERSION}\nThe simple to use tabletop gaming life/player tracker")
+    print("========================")
+    player = get_user_info("Please enter your name: ")
+    player_name = player.capitalize()
+    starting_life = get_starting_life_total("Please enter your current life total: ")
+
+    print("========================")
+    print(f"Game started\n{player_name} begins the game with {starting_life} life.")
+    print(player_options())
+
+
+
+
+if __name__ == "__main__":
+    main()
     
     
             
