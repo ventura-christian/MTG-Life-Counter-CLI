@@ -1,4 +1,6 @@
-# Python Magic the Gathering Player Life Counter
+# AetherPulse
+
+## Magic the Gathering Player Life Counter
 
 ## Created by: Christian Ventura
 
