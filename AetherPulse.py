@@ -18,6 +18,7 @@ print(f"Match started\n{player_name} begins the game with {starting_life_total} 
 
 def player_options():
     options = int(input("Please make a selection:\n1 Gain Life\n2 Lose Life\n3 Exit program\nSelection: "))
+    
     while options != 3:
         if options == 1:
             gain_life_options()
@@ -39,7 +40,8 @@ print(player_options())
 
 def gain_life_options():
     gain_options = int(input("How much life is gained?\n1 Gain +1 life\n2 Gain +5 life\n3 Gain +10 life\n4 Gain custom amount of life\nSelection: "))
-        if gain_options == 1:
+    if gain_options == 1:
+        
             
 
 def lose_life_options():
