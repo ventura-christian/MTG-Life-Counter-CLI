@@ -8,26 +8,46 @@ starting_life_total = int(input("Please enter your current life total: "))
 print("========================")
 print(f"Match started\n{player_name} begins the game with {starting_life_total} life.")
 
+# Variables needed
+    # player name, starting life total, updated life total, 
+# Functions needed
+    # options menu
+    # Gain life, loose life
+    # increment life totals (+1, +5, +10 and custom)
+
+
+
 def player_options():
+    new_life_total = int()
     options = int(input("Please make a selection:\n1 Gain Life\n2 Lose Life\n3 Exit program\nSelection: "))
     while options != 3:
         if options == 1:
-            gained_life = input("How much life is gained? ")
-            calcultion = starting_life_total + int(gained_life)
-            current_life_total = calcultion
-            print(f"{player_name} now has {current_life_total} life.") 
-            return player_options()
+            gain_life_options()
+            # gained_life = input("How much life is gained? ")
+            # new_life_total = starting_life_total + gained_life
+            # print(f"{player_name} now has {current_life_total} life.") 
+            # return player_options()
         # THIS IS WHERE I LEFT OFF!!
         # Continue figuring out how to store the new, updated life totals after each change occurs
         elif options == 2:
-            life_lost = input("How much life is lost? ")
-            current_life_total = starting_life_total - int(life_lost)
-            print(f"{player_name} now has {current_life_total} life.")
-            return player_options()
+            lose_life_options()
+            # life_lost = input("How much life is lost? ")
+            # print(f"{player_name} now has {current_life_total} life.")
+            # return player_options()
 
     return "Thank you for using AetherPulse!"
 
 print(player_options())
+
+def gain_life_options():
+    gain_options = int(input("How much life is gained?\n1 Gain +1 life\n2 Gain +5 life\n3 Gain +10 life\n4 Gain custom amount of life\nSelection: "))
+
+def lose_life_options():
+    loss_options = int(input("How much life is lost?\n1 Loose +1 life\n2 Loose +5 life\n3 Loose +10 life\n4 Loose a custom amount of life\nSelection: "))
+    
+    
+    
+    
             
     
     
