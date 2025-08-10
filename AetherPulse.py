@@ -16,9 +16,7 @@ print(f"Match started\n{player_name} begins the game with {starting_life_total} 
     # increment life totals (+1, +5, +10 and custom)
 
 
-
 def player_options():
-    new_life_total = int()
     options = int(input("Please make a selection:\n1 Gain Life\n2 Lose Life\n3 Exit program\nSelection: "))
     while options != 3:
         if options == 1:
@@ -41,6 +39,8 @@ print(player_options())
 
 def gain_life_options():
     gain_options = int(input("How much life is gained?\n1 Gain +1 life\n2 Gain +5 life\n3 Gain +10 life\n4 Gain custom amount of life\nSelection: "))
+        if gain_options == 1:
+            
 
 def lose_life_options():
     loss_options = int(input("How much life is lost?\n1 Loose +1 life\n2 Loose +5 life\n3 Loose +10 life\n4 Loose a custom amount of life\nSelection: "))
@@ -50,9 +50,7 @@ def lose_life_options():
     
             
     
-    
 
-    
 # MTG LIFE COUNTER CLI APPLICATION
 # This will be my first project that I will code from scratch using concepts I'm learning on Boot.dev
 # This is a work in progress so take my commits as steps towards the final completion of this idea
