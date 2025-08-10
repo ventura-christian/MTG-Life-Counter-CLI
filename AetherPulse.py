@@ -1,3 +1,23 @@
+# !/usr/bin/env python3
+
+"""
+AetherPulse
+Tabletop Game Life/Player Tracker
+---------------------------------
+This program runs in the command 
+line and allows players to maintain 
+life totals of one or more users. 
+---------------------------------
+Usage:
+    coming soon
+    
+Author: Christian Ventura
+Date: 2025-08-10
+---------------------------------
+Returns:
+    _type_: _description_
+"""
+
 print("========================")
 print("Welcome to AetherPulse\nThe simple to use Magic the Gathering life tracker")
 print("========================")
